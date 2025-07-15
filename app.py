@@ -41,6 +41,8 @@ EmLwkIYD9VnZfp9+2UoWSh0qZiTIHyNwFpJH78o=
 -----END RSA PRIVATE KEY-----
 '''
 
+GOOGLE_API_KEY = "AIzaSyA-FakeKey1234567890abcdefghijklmno"
+
 @app.route("/")
 def home():
     return "Fake secret testing Flask app is running."
