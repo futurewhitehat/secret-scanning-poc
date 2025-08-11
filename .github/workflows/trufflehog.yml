@@ -13,7 +13,7 @@ on:
 jobs:
   secret-scanning:
     name: Secret Scanning
-    uses: https://github.com/futurewhitehat/secret-scanning-poc/.github/workflows/trufflehog-scan-reusable.yml
+    uses: https://github.com/futurewhitehat/secret-scanning-poc/.github/workflows/trufflehog-scan-reusable.yml@main
     with:
       base-ref: 'main'                    # Branch to compare against
       head-ref: 'HEAD'                    # Current commit to scan
