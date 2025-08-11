@@ -1,4 +1,4 @@
-name: TruffleHog Scan on Push and PR
+name: TruffleHog Scan on Push and PS
 
 on:
   push:
