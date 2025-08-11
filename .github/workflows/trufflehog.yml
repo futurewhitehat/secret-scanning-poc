@@ -21,7 +21,7 @@ jobs:
       scan-depth: '50'                    # Number of commits to scan
       # config-path: '.trufflehog.yml'    # Optional: path to TruffleHog config
     secrets:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   # Example: Use in a different configuration for different scenarios
   secret-scanning-warn-only:
