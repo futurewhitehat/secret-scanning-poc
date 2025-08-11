@@ -4,6 +4,10 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
 
+permissions:  # 👈 Add this block
+  contents: read
+  pull-requests: write    
+
 jobs:
   trufflehog-scan:
     uses: futurewhitehat/secret-scanning-poc-1/.github/workflows/trufflehog-scan-reusable.yml@main
