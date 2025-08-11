@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   trufflehog:
-    uses: futurewhitehat/secret-scanning-poc-1/.github/workflows/trufflehog-reusable.yml@main
+    uses: futurewhitehat/secret-scanning-poc-1/.github/workflows/trufflehog-scan-reusable.yml@main
     with:
       base-ref: ${{ github.event.pull_request.base.ref || 'main' }}
       head-ref: ${{ github.event.pull_request.head.ref || github.ref_name }}
