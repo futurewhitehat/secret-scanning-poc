@@ -1,19 +1,23 @@
-name: Call TruffleHog PR Scan
+name: TruffleHog Scan on Push and PR
 
 on:
+  push:
+    branches:
+      - main
   pull_request:
     types: [opened, synchronize, reopened]
 
-permissions:  # 👈 Add this block
+permissions:
   contents: read
-  pull-requests: write    
+  pull-requests: write
 
 jobs:
-  trufflehog-scan:
-    uses: futurewhitehat/secret-scanning-poc-1/.github/workflows/trufflehog-scan-reusable.yml@main
+  trufflehog:
+    uses: futurewhitehat/secret-scanning-poc-1/.github/workflows/trufflehog-reusable.yml@main
     with:
-      base-ref: ${{ github.base_ref }}
-      head-ref: ${{ github.head_ref }}
-      fail-on-secrets: true
+      base-ref: ${{ github.event.pull_request.base.ref || 'main' }}
+      head-ref: ${{ github.event.pull_request.head.ref || github.ref_name }}
+      is-pr: ${{ github.event_name == 'pull_request' }}
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
