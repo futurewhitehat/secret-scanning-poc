@@ -34,5 +34,5 @@ jobs:
       fail-on-secrets: false              # Only warn, don't fail
       scan-depth: '100'                   # Deeper scan for manual runs
     secrets:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
