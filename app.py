@@ -40,7 +40,11 @@ jp5AOhhF/NECICyHsQN69CJ5mt6/R01wMOt5u9/eubn76rbyhPgk0h7xAiEAjn6m
 EmLwkIYD9VnZfp9+2UoWSh0qZiTIHyNwFpJH78o=
 -----END RSA PRIVATE KEY-----
 '''
+<<<<<<< HEAD
 SLACK_BOT_TOKEN = "xoxb-C228459186116-9224178209446-cnRAK5ms7Sz1Vmjbrybb4p0K"
+=======
+SLACK_BOT_TOKEN = "xoxb-8228459186116-9224178209446-cnRAK5ms7Sz1Vmjbrybb4p0K"
+>>>>>>> b630539 (first test)
 GOOGLE_API_KEY = "AIzaSyA-FakeKey1234567890abcdefghijklmno"
 
 @app.route("/")
