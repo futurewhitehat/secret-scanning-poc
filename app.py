@@ -19,7 +19,7 @@ TWILIO_AUTH_TOKEN = "abc123fakeTwilioToken987xyz"
 STRIPE_SECRET_KEY = "sk_test_4eC39HqLyjWDarjtT1zdp7dc"
 SLACK_BOT_TOKEN = "xoxb-123456789012-abcdefghijABCDEFGHIJ"
 
-GITHUB_TOKEN = "ghp_7fT1Yv9pXJkD4e0QwLr5Kbzx9uVNmU1aZ3xP"
+GITHUB_TOKEN = "ghp_8fT1Yv9pXJkD4e0QwLr5Kbzx9uVNmU1aZ3xP"
 DOCKER_HUB_PASSWORD = "fakeDockerHubPass123!"
 DATABASE_PASSWORD = "FakeDbPassword!@#123"
 
@@ -40,11 +40,7 @@ jp5AOhhF/NECICyHsQN69CJ5mt6/R01wMOt5u9/eubn76rbyhPgk0h7xAiEAjn6m
 EmLwkIYD9VnZfp9+2UoWSh0qZiTIHyNwFpJH78o=
 -----END RSA PRIVATE KEY-----
 '''
-<<<<<<< HEAD
-SLACK_BOT_TOKEN = "xoxb-C228459186116-9224178209446-cnRAK5ms7Sz1Vmjbrybb4p0K"
-=======
 SLACK_BOT_TOKEN = "xoxb-8228459186116-9224178209446-cnRAK5ms7Sz1Vmjbrybb4p0K"
->>>>>>> b630539 (first test)
 GOOGLE_API_KEY = "AIzaSyA-FakeKey1234567890abcdefghijklmno"
 
 @app.route("/")
