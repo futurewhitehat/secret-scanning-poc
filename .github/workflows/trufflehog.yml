@@ -15,6 +15,7 @@ jobs:
   trufflehog:
     uses: futurewhitehat/secret-scanning-poc-1/.github/workflows/trufflehog-scan-reusable.yml@main
     with:
+      repo-uri: https://github.com/${{ github.repository }}.git
       base-ref: ${{ github.event.pull_request.base.sha || github.event.before }}
       head-ref: ${{ github.event.pull_request.head.sha || github.sha }}
       is-pr: ${{ github.event_name == 'pull_request' }}
